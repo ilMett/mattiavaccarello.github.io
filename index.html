@@ -1,15 +1,12 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>My Portflio by Mattia Vaccarello</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/carousel.css">
+		
 	</head>
 	<body class="is-preload">
 
@@ -37,28 +34,65 @@
 					<section id="two">
 						<h2>Here's some of my projects:</h2>
 						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">	
+								<div class="slideshow-container">
+									<!-- Full-width images with number and caption text -->
+									<div class="mySlides fade">
+									  <img src="./images/fulls/SWAPI/SWAPIpeople.png" style="width:100%">
+									  <div class="text">List of People and a page for the single person's details</div>
+									</div>
+								  
+									<div class="mySlides fade">
+									  <img src="./images/fulls/SWAPI/SWAPIvehicles.png" style="width:100%">
+									  <div class="text">List of Vehicles and a page for the single vehicle's details</div>
+									</div>
+								  
+									<div class="mySlides fade">
+									  <img src="./images/fulls/SWAPI/SWAPIplanets.png" style="width:100%">
+									  <div class="text">List of Planets and a page for the single planet's details</div>
+									</div>
+								  
+									<div class="mySlides fade">
+										<img src="./images/fulls/SWAPI/SWAPIfilms.png" style="width:100%">
+										<div class="text">List of Films</div>
+									</div>
+								  
+									<!-- Next and previous buttons -->
+									<div class="slide-buttons">
+										<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(1)">&#10095;</a>
+									</div>
+
+									<h3>Blazor App that queries a REST API(swapi.tech) receives and processes .json files:</h3>
+									<p>The .json files that the Blazor App receives thanks to HTTP requests contain information about the: characters, vehicles, planets and movies that are present in the Star Wars saga, thanks to the already implemented bootstrap framework I can process and display the contents of the .json files. </p>
+									<a href="https://github.com/ilMett/Vaccarello_SwapiAPI_Blazor" style="color: #000; background-color: #fff;" class="github-link">GitHub Repository</a>
+								</div>
+								<br>
+							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/SWAPI.png" class="image fit thumb"><img src="images/fulls/SWAPI.png" alt="" /></a>
 								<h3>C# project that queries an API by obtaining and handling data about Star Wars characters:</h3>
 								<p>A project written in .NET 8.0, querying the API (https://swapi.dev/ where read-only data is exposed) obtains information regarding Star Wars characters and then thanks to the Spectre Console library shows a menu from which one can obtain: the list of characters, average their height and weight, and search by name. </p>
-								<a href="projects/Vaccarello Mattia SwapiAPI.zip" download class="btn btn-primary" id="download-zip" style="color: #000; background-color: #fff;">Download .zip project</a> <br> 
-								<a href="https://github.com/ilMett/Vaccarello_SwapiAPI" style="color: #000; background-color: #fff;">GitHub Repository</a>
+								<a href="https://github.com/ilMett/Vaccarello_SwapiAPI" style="color: #000; background-color: #fff;" class="github-link">GitHub Repository</a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/CarGame.png" class="image fit thumb"><img src="images/fulls/CarGame.png" alt="" /></a>								<h3>Car Game, made with Android Studio:</h3>
 								<p>Game with scrolling background, made with libGDX framework. In this game you must avoid the incoming cars, to help the player every now and then it will apperar a little bonus which reduces the size of your car. You can choose the difficilty level as soon as the game starts.</p>
-								<a href="projects/Vaccarello_CarGame.zip" download class="btn btn-primary" id="download-zip" style="color: #000; background-color: #fff;">Download .zip project</a> <br>  
-								<a href="https://github.com/ilMett/Vaccarello_CarGame" style="color: #000; background-color: #fff;">GitHub Repository</a>
+								<a href="https://github.com/ilMett/Vaccarello_CarGame" style="color: #000; background-color: #fff;" class="github-link">GitHub Repository</a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/everyGitter.png" class="image fit thumb"><img src="images/fulls/everyGitter.png" alt="" /></a>
 								<h3>Gitter Writer Android App: </h3>
 								<p>A simple type app, where you can choose beetwen three languages, Clicking on language it will open a new Activity where a bunch of random words are generated and you will find a "START" button, if you feel ready you can press it and a count down will start along with an editable text, type the words and when the countdown ends check how many words have you have written correctly. After that press "GO BACK" and you can restart everything. </p>
-								<a href="projects/Vaccarello_Mattia_Typer_App.zip" download class="btn btn-primary" id="download-zip" style="color: #000; background-color: #fff;">Download .zip project</a> <br> 
-								<a href="https://github.com/ilMett/Vaccarello_GitterWriter" style="color: #000; background-color: #fff;">GitHub Repository</a>
+								<a href="https://github.com/ilMett/Vaccarello_GitterWriter" style="color: #000; background-color: #fff;" class="github-link">GitHub Repository</a>
 							</article>
+
+								
+								
 						</div>
+						
 					</section>
+					
 
 				<!-- Three -->
 					<section id="three">
@@ -86,12 +120,14 @@
 					</section>
 			</div>
 		<!-- Scripts -->
+			<script src="./assets/js/carousel.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+		
+			
 	</body>
 </html>
